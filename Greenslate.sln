@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29102.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DATA.Greenslate.EF", "DATA.Greenslate.EF\DATA.Greenslate.EF.csproj", "{7A64ED02-1508-4E6B-9339-F14326666EE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.Greenslate.MVC", "UI.Greenslate.MVC\UI.Greenslate.MVC.csproj", "{1748C1FC-2AD0-4EEE-8CD1-71B5A68C507E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A64ED02-1508-4E6B-9339-F14326666EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A64ED02-1508-4E6B-9339-F14326666EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A64ED02-1508-4E6B-9339-F14326666EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A64ED02-1508-4E6B-9339-F14326666EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1748C1FC-2AD0-4EEE-8CD1-71B5A68C507E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1748C1FC-2AD0-4EEE-8CD1-71B5A68C507E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1748C1FC-2AD0-4EEE-8CD1-71B5A68C507E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1748C1FC-2AD0-4EEE-8CD1-71B5A68C507E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98E7FA16-961D-43C6-A43A-F38BE1220095}
+	EndGlobalSection
+EndGlobal

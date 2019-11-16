@@ -1,0 +1,83 @@
+﻿@model UI.Greenslate.MVC.ViewModels.ProjectsByUserViewModel
+
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<br/>
+<br/>
+<div class="row">
+    <select name="" id="" class="user-select-list ">
+        <option class="user-list" selected value="0">--</option>
+        @foreach (var u in Model.Users)
+        {
+            <option class="user-list" value="@u.Id.ToString()">@u.FirstName @u.LastName</option>
+        }
+    </select>
+    <input type="hidden" id="selected-user-id" value="0" />
+    <input type="submit" class="btn" id="user-submit" value="Get Projects By User" />
+</div>
+
+<br />
+
+<div>
+    @if (Model.ProjectsByUser is null)
+    {
+        <div>No Projects for this user</div>
+    }
+    else
+    {
+        <table class="table projects-by-user-table">
+            <tr>
+                <th>
+                    Project Id
+                </th>
+                <th>
+                    Project Start Date
+                </th>
+                <th>
+                    Assigned Date
+                </th>
+                <th>
+                    Time To Start
+                </th>
+                <th>
+                    Project End Date
+                </th>
+                <th>
+                    Credits
+                </th>
+                <th>
+                    Status
+                </th>
+            </tr>
+            @foreach (var pbu in Model.ProjectsByUser)
+            {
+                <tr class="user-row user-@pbu.UserId">
+                    <td>
+                        @pbu.ProjectId
+                    </td>
+                    <td>
+                        @pbu.ProjectStartDate
+                    </td>
+                    <td>
+                        @pbu.AssignedDate
+                    </td>
+                    <td>
+                        @((pbu.TimeToStart < 0) ? "Started" : pbu.TimeToStart.ToString())
+                    </td>
+                    <td>
+                        @pbu.ProjectEndDate
+                    </td>
+                    <td>
+                        @pbu.Credits
+                    </td>
+                    <td>
+                        @pbu.Status
+                    </td>
+                </tr>
+            }
+
+        </table>
+    }
+</div>
